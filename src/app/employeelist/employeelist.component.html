@@ -1,0 +1,20 @@
+
+<div *ngFor="let employee of employees">
+
+  <h3>
+    <mat-card class="name-card">{{ employee.name }}</mat-card>
+      
+    
+  </h3>
+
+  <p>
+    Haircut Price: {{ employee.priceHaircut}}
+  </p>
+
+  <div class="time-buttons">
+  <button mat-raised-button color="primary" *ngFor ="let time of employee.times">
+    {{ time }}
+  </button>
+  </div>
+
+</div>
