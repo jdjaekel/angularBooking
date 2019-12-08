@@ -1,0 +1,10 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    @include mat-form-field($mat-indigo);
+  }
+  
+  .example-container > * {
+    width: 30%;
+  }
+  
